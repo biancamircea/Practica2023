@@ -1,0 +1,15 @@
+#!/bin/bash
+
+PS3="Alege o optiune din meniul principal: " 
+select ITEM in "Configurari retea" "Configurari servicii de retea" "Configurari pentru securitatea utilizatorilor" "Configurari ale sistemului de fisiere" "Monitorizarea sistemului" "Exit"
+do
+case $REPLY in 
+1)./s1.sh;;
+2)./s2.sh;;
+3)./s3.sh;;
+4)./s4.sh;;
+5)./s5.sh;;
+6)exit 0;;
+*)echo "Varianta incorecta! Reincercati!"
+esac
+done
